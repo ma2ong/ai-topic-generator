@@ -1,0 +1,31 @@
+# Output directories
+output/
+*.json
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables
+.env
+.env.local
+
+# Cache
+__pycache__/
+*.pyc
+.cache/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
