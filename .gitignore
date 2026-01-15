@@ -1,6 +1,8 @@
-# Output directories
-output/
-*.json
+# Output directories - keep structure but ignore generated files
+output/*.json
+output/*/*.json
+!output/*/example.json
+!output/*/.gitkeep
 
 # Logs
 *.log
