@@ -2,6 +2,28 @@
 
 > 一键完成热点采集、选题生成、质量审核的全自动内容选题系统。
 
+## 📢 重要更新
+
+**本项目已集成到 [claude-skills-collection](https://github.com/ma2ong/claude-skills-collection) 写作技能包中！**
+
+如果你已经在使用 claude-skills-collection，无需单独克隆本仓库。直接使用：
+
+```bash
+cd ~/.claude/skills
+git clone https://github.com/ma2ong/claude-skills-collection.git
+```
+
+**claude-skills-collection** 包含：
+- ✅ 本项目的完整功能（ai-topic-generator）
+- ✅ 全流程写作系统（vibe-writer-pro）
+- ✅ AI味审校（ai-proofreading）
+- ✅ 内容转换分发（content-converter）
+- ✅ 个人素材库搜索（personal-knowledge-search）
+
+**推荐使用集成版**，获得完整的写作工作流支持。
+
+---
+
 ## 🎯 一句话开始
 
 ```
@@ -16,15 +38,31 @@
 
 **原本需要 2-3 小时的选题工作，现在只需 5-10 分钟！**
 
+---
+
 ## 📦 安装
 
-### 方式一：克隆仓库（推荐）
+### 方式一：使用集成版（推荐）⭐
 
 ```bash
+# 获取包含本项目的完整写作技能包
+cd ~/.claude/skills
+git clone https://github.com/ma2ong/claude-skills-collection.git
+```
+
+**优势**：
+- 包含完整的写作工作流（选题 → 写作 → 审校 → 分发）
+- 自动更新和维护
+- 与其他写作工具无缝协作
+
+### 方式二：独立使用
+
+```bash
+# 仅使用选题系统
 git clone https://github.com/ma2ong/ai-topic-generator.git
 ```
 
-### 方式二：下载 ZIP
+### 方式三：下载 ZIP
 
 从 [Releases](https://github.com/ma2ong/ai-topic-generator/releases) 下载最新版本。
 
@@ -36,12 +74,14 @@ git clone https://github.com/ma2ong/ai-topic-generator.git
 开始今日选题生成
 ```
 
+---
+
 ## 🚀 快速开始
 
 ### 完整流程（一键执行）
 
 ```
-开始今日选题生成，今天是2026年1月15日
+开始今日选题生成，今天是2026年1月29日
 ```
 
 ### 分步执行
@@ -70,12 +110,14 @@ git clone https://github.com/ma2ong/ai-topic-generator.git
 只从GitHub和ProductHunt采集热点
 ```
 
+---
+
 ## 📊 输出示例
 
 执行完成后，系统会生成三个文件：
 
 ### 1. 热点数据
-`output/daily_hotspots/2026-01-15.json`
+`output/daily_hotspots/2026-01-29.json`
 
 ```json
 {
@@ -89,7 +131,7 @@ git clone https://github.com/ma2ong/ai-topic-generator.git
 ```
 
 ### 2. 生成选题
-`output/generated_topics/2026-01-15.json`
+`output/generated_topics/2026-01-29.json`
 
 ```json
 {
@@ -110,7 +152,7 @@ git clone https://github.com/ma2ong/ai-topic-generator.git
 ```
 
 ### 3. 审核报告
-`output/review_reports/2026-01-15.json`
+`output/review_reports/2026-01-29.json`
 
 ```json
 {
@@ -122,6 +164,8 @@ git clone https://github.com/ma2ong/ai-topic-generator.git
   }
 }
 ```
+
+---
 
 ## 📁 项目结构
 
@@ -135,10 +179,13 @@ ai-topic-generator/
 │   ├── generated_topics/   # 生成的选题
 │   └── review_reports/     # 审核报告
 └── skills/                 # 分拆版Skills（可选，向后兼容）
-    ├── hotspot-collector/
-    ├── topic-generator/
-    └── topic-reviewer/
+    ├── hotspot-collector/  # 热点采集器
+    ├── topic-generator/    # 选题生成器
+    ├── topic-reviewer/     # 选题审核官
+    └── obsidian-exporter/  # Obsidian导出器
 ```
+
+---
 
 ## ⚙️ 配置
 
@@ -158,6 +205,8 @@ ai-topic-generator/
 - 单项 ≥ 60%
 - 无致命缺陷
 
+---
+
 ## 📈 效率对比
 
 | 工作环节 | 传统方式 | 使用本系统 | 提升 |
@@ -168,6 +217,32 @@ ai-topic-generator/
 | 标题创作 | 10-20分钟 | 自动 | **∞** |
 | 质量审核 | 10-15分钟 | 1分钟 | **10x** |
 | **总计** | **2-3.5小时** | **5-10分钟** | **20-40x** |
+
+---
+
+## 🔗 完整写作工作流
+
+### 推荐组合使用
+
+配合 [claude-skills-collection](https://github.com/ma2ong/claude-skills-collection) 实现完整闭环：
+
+```
+# Step 1: 选题生成（本项目）
+开始今日选题生成
+
+# Step 2: 写作（vibe-writer-pro）
+启动 Vibe Writer Pro，基于这个选题写文章
+
+# Step 3: 审校（ai-proofreading）
+审校这篇文章，降低AI味
+
+# Step 4: 分发（content-converter）
+把这篇文章转成X的thread
+```
+
+**从选题到发布，一条龙自动化！**
+
+---
 
 ## 🛠️ 故障排查
 
@@ -185,17 +260,51 @@ ai-topic-generator/
 - 人工介入部分选题
 - 调整后重新提交
 
+---
+
+## 🌟 相关项目
+
+- **[claude-skills-collection](https://github.com/ma2ong/claude-skills-collection)** - 完整写作技能包（推荐）
+  - 包含本项目的所有功能
+  - 额外提供写作、审校、分发等能力
+  - 统一管理和更新
+
+---
+
 ## 📄 许可证
 
 MIT License
+
+---
 
 ## 🙏 致谢
 
 - 基于 Claude Code Skills 架构
 - 感谢 Anthropic 提供的 AI 能力
+- 已集成到 [claude-skills-collection](https://github.com/ma2ong/claude-skills-collection)
 
 ---
 
-**开始使用**：`git clone` 后，在 Claude Code 中说"开始今日选题生成"即可！
+## 📝 更新日志
+
+### v2.0.0 (2026-01-29)
+
+- ✅ 集成到 claude-skills-collection
+- 📝 更新 README，添加集成说明
+- 🔗 推荐使用集成版获得完整工作流
+
+### v1.0.0 (2026-01-15)
+
+- ✨ 初始版本发布
+- 🎯 自动化选题系统
+- 📡 多平台热点采集
+- 🔄 智能审核与迭代
+
+---
+
+**开始使用**：
+
+- **推荐**：安装 [claude-skills-collection](https://github.com/ma2ong/claude-skills-collection) 获得完整功能
+- **独立使用**：`git clone` 本仓库后，在 Claude Code 中说"开始今日选题生成"即可
 
 GitHub: https://github.com/ma2ong/ai-topic-generator
