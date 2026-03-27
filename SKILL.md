@@ -34,11 +34,15 @@ description: AI选题生成系统 - 一键完成热点采集、选题生成、�
 
 ### 采集平台
 
-| 优先级 | 平台 |
-|--------|------|
-| 高 | Twitter/X、Reddit、GitHub Trending、Hacker News、buzzing.cc |
-| 中 | 知乎热榜、微博热搜、Product Hunt |
-| 低 | 小红书、B站（补充性采集） |
+> **工具规则**：优先使用 `opencli` 命令采集；opencli 失败时切换 `web-access` skill；禁止直接用 WebFetch/WebSearch 模拟热榜。
+
+| 优先级 | 平台 | 说明 |
+|--------|------|------|
+| 🥇 主战场 | **Twitter/X** | AI 科技圈最新动态首发地，大V账号 + 关键词搜索双管齐下 |
+| 🥈 辅助验证 | GitHub Trending、Hacker News、buzzing.cc | 交叉验证热度，补充深度背景 |
+| 🥈 辅助验证 | Product Hunt | 新产品发现，AI Native 类优先 |
+| 🥉 中文补充 | 知乎热榜、微博热搜、V2EX | 中文 AI 圈动态，补充本地视角 |
+| 参考 | 小红书、B站 | 消费端传播验证，非主力信源 |
 
 ### 采集标准
 
