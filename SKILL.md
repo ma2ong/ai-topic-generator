@@ -38,7 +38,8 @@ description: AI选题生成系统 - 一键完成热点采集、选题生成、�
 
 | 优先级 | 平台 | 说明 |
 |--------|------|------|
-| 🥇 主战场 | **Twitter/X** | AI 科技圈最新动态首发地，大V账号 + 关键词搜索双管齐下 |
+| 🥇 主战场 | **Twitter/X（follow-builders 精选账号）** | 采集 [follow-builders](https://github.com/zarazhangrui/follow-builders) 策划的 25 位 AI Builder + 官方账号，关注「真正在构建产品和有独立见解的人」 |
+| 🥇 主战场 | **Twitter/X（关键词搜索）** | 在 Twitter 搜索 AI 发布、模型更新、行业争议等热词 |
 | 🥈 辅助验证 | GitHub Trending、Hacker News、buzzing.cc | 交叉验证热度，补充深度背景 |
 | 🥈 辅助验证 | Product Hunt | 新产品发现，AI Native 类优先 |
 | 🥉 中文补充 | 知乎热榜、微博热搜、V2EX | 中文 AI 圈动态，补充本地视角 |

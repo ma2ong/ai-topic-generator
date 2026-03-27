@@ -27,21 +27,46 @@ description: 热点采集员 - 以 Twitter/X 为主战场，结合 opencli + web
 
 **Step A：关键大 V 账号时间线（并行）**
 
+> 账号来源：[follow-builders](https://github.com/zarazhangrui/follow-builders) 精选（关注「真正在构建产品和有独立见解的人」）+ 官方账号补充
+
 ```bash
 # AI 公司官方账号
 opencli twitter user-timeline --username OpenAI -f json --limit 20
 opencli twitter user-timeline --username AnthropicAI -f json --limit 20
+opencli twitter user-timeline --username claudeai -f json --limit 20
 opencli twitter user-timeline --username GoogleDeepMind -f json --limit 20
+opencli twitter user-timeline --username GoogleLabs -f json --limit 15
 opencli twitter user-timeline --username xai -f json --limit 15
 opencli twitter user-timeline --username mistralai -f json --limit 15
 
-# 顶级 AI 研究者 / 意见领袖
+# follow-builders 精选：AI 研究者 / 工程师
 opencli twitter user-timeline --username karpathy -f json --limit 20
-opencli twitter user-timeline --username ylecun -f json --limit 15
-opencli twitter user-timeline --username sama -f json --limit 15
-opencli twitter user-timeline --username ilyasut -f json --limit 15
-opencli twitter user-timeline --username aidan_mclau -f json --limit 15
 opencli twitter user-timeline --username swyx -f json --limit 20
+opencli twitter user-timeline --username sama -f json --limit 15
+opencli twitter user-timeline --username AmandaAskell -f json --limit 15
+opencli twitter user-timeline --username alexalbert__ -f json --limit 15
+opencli twitter user-timeline --username ylecun -f json --limit 15
+opencli twitter user-timeline --username ilyasut -f json --limit 15
+
+# follow-builders 精选：产品 / 创业者
+opencli twitter user-timeline --username amasad -f json --limit 15
+opencli twitter user-timeline --username rauchg -f json --limit 15
+opencli twitter user-timeline --username garrytan -f json --limit 15
+opencli twitter user-timeline --username danshipper -f json --limit 15
+opencli twitter user-timeline --username steipete -f json --limit 15
+opencli twitter user-timeline --username levie -f json --limit 15
+opencli twitter user-timeline --username kevinweil -f json --limit 15
+opencli twitter user-timeline --username petergyang -f json --limit 15
+opencli twitter user-timeline --username mattturck -f json --limit 15
+opencli twitter user-timeline --username nikunj -f json --limit 15
+opencli twitter user-timeline --username adityaag -f json --limit 15
+opencli twitter user-timeline --username zarazhangrui -f json --limit 15
+opencli twitter user-timeline --username joshwoodward -f json --limit 15
+opencli twitter user-timeline --username thenanyu -f json --limit 15
+opencli twitter user-timeline --username realmadhuguru -f json --limit 15
+opencli twitter user-timeline --username ryolu_ -f json --limit 15
+opencli twitter user-timeline --username _catwu -f json --limit 15
+opencli twitter user-timeline --username trq212 -f json --limit 15
 opencli twitter user-timeline --username GaryMarcus -f json --limit 15
 ```
 
