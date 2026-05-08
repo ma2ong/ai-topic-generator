@@ -112,6 +112,7 @@ opencli reddit hot -f json --limit 15
 ```
 
 用 `web-access` skill 访问以下页面做补充：
+- `https://aihot.virxact.com` — 卡兹克 AI 热点聚合站：读「精选」+「AI日报」栏目，获取当日高质量 AI 动态；「公众号爆文」判断国内传播热度
 - `https://buzzing.cc` — HN 中文热议聚合
 - `https://www.producthunt.com` — 今日 Product Hunt 榜单
 
