@@ -111,8 +111,15 @@ opencli github trending -f json --limit 15
 opencli reddit hot -f json --limit 15
 ```
 
+用 **aihot skill** 拉取 AI HOT 精选资讯（直接调 REST API，比 web-access 更稳定）：
+
+```bash
+UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+since=$(date -u -v-24H +%Y-%m-%dT%H:%M:%SZ 2>/dev/null || date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)
+curl -sH "User-Agent: $UA" "https://aihot.virxact.com/api/public/items?mode=selected&since=$since&take=50"
+```
+
 用 `web-access` skill 访问以下页面做补充：
-- `https://aihot.virxact.com` — 卡兹克 AI 热点聚合站：读「精选」+「AI日报」栏目，获取当日高质量 AI 动态；「公众号爆文」判断国内传播热度
 - `https://buzzing.cc` — HN 中文热议聚合
 - `https://www.producthunt.com` — 今日 Product Hunt 榜单
 
