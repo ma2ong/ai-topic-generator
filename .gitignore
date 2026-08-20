@@ -34,7 +34,8 @@ temp/
 
 # 只属于本仓库的是 ai-topic-generator 本身。
 # 以下目录是同机上的其他项目，各自有仓库，不进这里：
-# outreach-tool → ma2ong/outreach-tool-app（私有）
+# outreach-tool → 已于 2026-08-20 搬到 C:\Users\Administrator\outreach-tool\，
+#                 代码推 ma2ong/outreach-tool-app（私有）。此条保留作防误拷回。
 # output/leads  → 同上，含真实客户联系方式，绝不进公开仓库
 outreach-tool/
 output/leads/
